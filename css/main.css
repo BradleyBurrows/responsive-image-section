@@ -1,0 +1,172 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+  font: normal 100%/1.3 sans-serif;
+  background-color: #e2e2e2;
+  font-style: sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-left: .7em;
+}
+
+h2 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: .2em;
+  padding-bottom: .7em;
+}
+
+.text {
+  margin: .7em;
+}
+
+.button {
+  text-decoration: none;
+  margin-left: .7em;
+  background-color: #555;
+  color: #fff;
+  padding:0.5em 0.75em;
+  border-radius: 4px;
+}
+
+.img-flex {
+  width: 100%;
+  transform: translateY(20px);
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.3rem;
+    padding-bottom: 0;
+    padding-right: 1em;
+  }
+
+  h1{
+    margin-top: .9em;
+    margin-left: .7em;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.4rem;
+  }
+
+  h1 {
+  max-width: 270px;
+  margin-left: .5em;
+  margin-top: .9em;
+  }
+
+  .text {
+    max-width: 270px;
+  }
+
+  .img-flex {
+    display: flex;
+    width: 50%;
+    margin-left: 16em;
+    transform: translateY(-250px);
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.5rem;
+  }
+
+  h1{
+    margin-left: 2em;
+    margin-top: 2em;
+    max-width: 425px;
+  }
+
+  .text {
+    max-width:425px;
+    margin-left: 2em;
+  }
+
+  .button {
+    margin-left: 2em;
+  }
+
+  .img-flex {
+    display: flex;
+    width: 46%;
+    float: right;
+    margin-right: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  .img-flex {
+    width: 35%;
+    float: right;
+    margin-right: 9em;
+  }
+
+  h1 {
+    margin-left: 6.3em;
+    max-width: 500px;
+  }
+
+  .text {
+    margin-left: 9em;
+    max-width: 500px
+  }
+
+  .button {
+    margin-left: 9em;
+  }
+
+}
